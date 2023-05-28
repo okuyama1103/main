@@ -31,6 +31,7 @@ class Qes1_13 {
 		// 真偽値型
 		boolean judge;
 		
+		
 		// 問2
 		
 		// byte 初期値
@@ -55,10 +56,11 @@ class Qes1_13 {
 		character1 = '\0';
 		
 		// String 初期値
-		character2 = " ";
+		character2 = null;
 		
 		// boolean 初期値
 		judge = false;
+		
 		
 		// 問3
 		
@@ -81,14 +83,15 @@ class Qes1_13 {
 		
 		judge = true;
 		
+		
 		// 問4
+		System.out.println("問4");
 		
 		// number1～4の和
 		System.out.println(number1 + number2 + number3 + number4);
 		
 		// number1+number1
-		number1 += number1;
-		System.out.println(number1);
+		System.out.println(number5 + number6);
 		
 		// characterとjudgeの表示
 		System.out.println(character1 + " " + character2 + " " + judge);
@@ -103,162 +106,175 @@ class Qes1_13 {
 		System.out.println(number6 / number2);
 		
 		// 10 - 100
-		System.out.println(number1 - number2);
+		System.out.println(number1 - number2 + "\r\n");
+		
 		
 		// 問5
+		System.out.println("問5");
 		
 		// 変更箇所 → String型をint型に
 		int num1 = 20;
 		
 		int num2 = 23;
 		
-		System.out.println("ハローJAVA" + (num1 + num2));
+		System.out.println("ハローJAVA" + (num1 + num2) +"\r\n");
+		
 		
 		// 問6
+		System.out.println("問6");
 		
 		// 個人情報作成
-		String name1 = "山田太郎";
+		String name = "山田太郎";
 		
-		int age1 = 18;
+		int age = 18;
 		
-		float height1 = 170.5f;
+		float height = 170.5f;
 		
-		float weight1 = 62.2f;
+		float weight = 62.2f;
 		
 		String like = "寿司";
+				
+		// 出力
+		System.out.println("初めまして" + name + "です");
 		
-		// 改行コードの環境依存解除
-		String br = System.getProperty("line.separator");
+		System.out.println("年齢は" + age + "歳です");
 		
-		// 代入
-		System.out.println("初めまして" + br + name1 + br + "です");
+		System.out.println("身長は" + height + "cmです");
 		
-		System.out.println("年齢は" + br + age1 + br + "歳です");
+		System.out.println("体重は" + weight + "kgです");
 		
-		System.out.println("身長は" + br + height1 + br + "cmです");
+		System.out.println("好きな食べ物は" + like + "です" + "\r\n");
 		
-		System.out.println("体重は" + br + weight1 + br + "kgです");
-		
-		System.out.println("好きな食べ物は" + br + like + br + "です");
 		
 		// 問7
+		System.out.println("問7");
 		
 		// 身長cmを身長mに単位変換
-		float height2 = (height1 / 100);
+		float heightM = (height / 100);
 		
 		// BMI = 体重kg ÷ 身長m^2
-		double bmi1 = (weight1 / Math.pow(height2 ,  2));
+		double bmi = (weight / Math.pow(heightM ,  2));
 		
 		//bmiを四捨五入
-		double bmiRound1 =(Math.round(bmi1 * 10)) /10;
+		double bmiRound1 =(double)(Math.round(bmi * 10)) /10;
 		
-		System.out.println("BMIは" + br + bmiRound1 + br + "です");
+		System.out.println("BMIは" + bmiRound1 + "です" + "\r\n");
+		
 		
 		// 問8
+		System.out.println("問8");
 		
 		// 名前の再代入
-		name1 = "鈴木一郎";
+		name = "鈴木一郎";
 		
-		System.out.println("初めまして" + br + name1 + br + "です");
+		System.out.println("初めまして" + name + "です");
 		
 		// 年齢の再代入
-		age1 = 24;
+		age = 24;
 				
-		System.out.println("年齢は" + br + age1 + br + "歳です");
+		System.out.println("年齢は" + age + "歳です");
 		
 		// 身長の再代入
-		height1 = 168.5f;
+		height = 168.5f;
 				
-		System.out.println("身長は" + br + height1 + br + "cmです");
+		System.out.println("身長は" + height  + "cmです");
 		
 		// 体重の再代入
-		weight1 = 64.2f;
+		weight = 64.2f;
 				
-		System.out.println("体重は" + br + weight1 + br + "kgです");
+		System.out.println("体重は" + weight + "kgです");
 		
 		// 好物の再代入
 		like = "オムライス";
 		
-		System.out.println("好きな食べ物は" + br + like + br + "です");
+		System.out.println("好きな食べ物は" + like + "です");
 		
 		// 身長の単位変換
-		height2 = (height1 / 100);
+		heightM = (height / 100);
 		
 		// BMIの再代入
-		bmi1 = (weight1 / Math.pow(height2 ,  2));
+		bmi = (weight / Math.pow(heightM ,  2));
 		
-		double bmiRound2 = (Math.round(bmi1 * 10)) /10;
+		double bmiRound2 = (double)(Math.round(bmi * 10)) /10;
 		
-		System.out.println("BMIは" + br + bmiRound2 + br + "です");
+		System.out.println("BMIは" + bmiRound2 + "です" + "\r\n");
+		
 		
 		// 問9
+		System.out.println("問9");
 		
-		System.out.println("初めまして" + br + name1 + br + "です");
+		System.out.println("初めまして" + name + "です");
 		
-		// 問6 問8 年齢の和
-		int age2 = age1;
+		// 24 → 48
+		age +=  age;
 
-		System.out.println("年齢は" + br +(age1 + age2) + br + "歳です");
+		System.out.println("年齢は" + age + "歳です");
 		
-		// 問6 問8 身長の和
-		float height3 = height1;
+		// 168.5 → 337.0
+		height += height;
 
-		System.out.println("身長は" + br + (height1 + height3) + br + "cmです");
+		System.out.println("身長は" + height+ "cmです");
 		
-		// 問6 問8 体重の和
-		float weight2 = weight1;
+		// 64.2 → 128.4
+		weight += weight;
 
-		System.out.println("体重は" + br + (weight1 + weight2) + br + "kgです");
+		System.out.println("体重は" + weight + "kgです");
 		
-		System.out.println("好きな食べ物は" + br + like + br + "です");
+		System.out.println("好きな食べ物は"  + like + "です");
 		
 		// 身長の単位変換
-		height2 = ((height1 + height3) / 100);
+		heightM = (height / 100);
 		
 		// わかりやすくするために置換
-		float height4 = height2;
+		float heightM2 = heightM;
 		
 		// BMI 再代入
-		bmi1 = ((weight1 + weight2) / Math.pow(height4 ,  2));
+		bmi = (double)(weight / Math.pow(heightM2 ,  2));
 		
-		double bmi2 = bmi1;
+		double bmiD = bmi;
 		
 		// 四捨五入
-		double bmiRound3 = (Math.round(bmi2 * 10)) /10;
+		double bmiRound3 = (double)(Math.round(bmiD * 100)) /100;
 		
-		System.out.println("BMIは" + br + bmiRound3 + br + "です");
+		System.out.println("BMIは" + bmiRound3 + "です" + "\r\n");
+		
 		
 		// 問10
+		System.out.println("問10");
 		
 		// 年齢が25以上であれば "true"
-		boolean judge2 = (age2 >= 25);
+		boolean judge2 = (age >= 25);
 		
-		System.out.println(judge2);
+		System.out.println(judge2 + "\r\n");
+		
 		
 		// 問11
+		System.out.println("問11");
 		
 		// int型 float型をSring型に変換
-		String valStr1 = String.valueOf(age2);
+		String strAge = String.valueOf(age);
 		
-		String valStr2 = String.valueOf(height3);
+		String strHeight = String.valueOf(height);
 		
-		String valStr3 = String.valueOf(weight2);
+		String strWeight = String.valueOf(weight);
 		
-		System.out.println(valStr1);
+		System.out.println(strAge);
 		
-		System.out.println(valStr2);
+		System.out.println(strHeight);
 		
-		System.out.println(valStr3);
+		System.out.println(strWeight);
 		
-		System.out.println(valStr1 + br + valStr2 + br + valStr3);
+		System.out.println(strAge + strHeight + strWeight + "\r\n");
+		
 		
 		// 問12
+		System.out.println("問12");
 		
 		// String型を元のint型に
-		int valInt1 = Integer.parseInt(valStr1);
+		int valInt1 = Integer.parseInt(strAge);
 		
 		// String型を元のfloat型に
-		Float valFol1 = Float.parseFloat(valStr2);
+		Float valFol1 = Float.parseFloat(strHeight);
 		
 		// float型をint型に強制型変換
 		int valInt2 = (int)Math.round(valFol1);
@@ -269,9 +285,9 @@ class Qes1_13 {
 		
 		System.out.println(valInt2);
 		
-		System.out.println(valInt1 + br+ valInt2);
+		System.out.println(valInt1 + valInt2 + "\r\n");
 		
-		// 問13
+		System.out.println("問13");
 		
 		// 年齢が25以上か 身長が160以上であれば"true"
 		boolean judge3 =(valInt1 == 25) || (valInt2 >= 160);
