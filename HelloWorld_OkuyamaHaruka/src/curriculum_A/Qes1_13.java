@@ -218,8 +218,8 @@ class Qes1_13 {
 		// 64.2 → 128.4
 		weight += weight;
 
+		// 出力
 		System.out.println("体重は" + weight + "kgです");
-		
 		System.out.println("好きな食べ物は"  + like + "です");
 		
 		// 身長の単位変換
@@ -230,11 +230,9 @@ class Qes1_13 {
 		
 		// BMI 再代入
 		bmi = (double)(weight / Math.pow(heightM2 ,  2));
-		
-		double bmiD = bmi;
-		
+				
 		// 四捨五入
-		double bmiRound3 = (double)(Math.round(bmiD * 100)) /100;
+		double bmiRound3 = (double)(Math.round(bmi * 100)) /100;
 		
 		System.out.println("BMIは" + bmiRound3 + "です" + "\r\n");
 		
@@ -258,12 +256,10 @@ class Qes1_13 {
 		
 		String strWeight = String.valueOf(weight);
 		
+		// 出力
 		System.out.println(strAge);
-		
 		System.out.println(strHeight);
-		
 		System.out.println(strWeight);
-		
 		System.out.println(strAge + strHeight + strWeight + "\r\n");
 		
 		
@@ -279,12 +275,10 @@ class Qes1_13 {
 		// float型をint型に強制型変換
 		int valInt2 = (int)Math.round(valFol1);
 		
+		// 出力
 		System.out.println(valInt1);
-		
 		System.out.println(valFol1);
-		
 		System.out.println(valInt2);
-		
 		System.out.println(valInt1 + valInt2 + "\r\n");
 		
 		System.out.println("問13");
