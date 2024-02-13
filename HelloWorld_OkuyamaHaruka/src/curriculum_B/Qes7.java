@@ -68,6 +68,7 @@ public class Qes7 {
 				break;
 			}
 		}
+		sc.close();
 
 	}
 
