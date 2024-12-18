@@ -10,10 +10,10 @@ public class Main {
 		// インスタンスの作成
 		Person person2 = new Person("山田花子", 22, 1.5, 40);
 		person2.print();
-		
+
 		// 合計を出力
 		System.out.println("合計" + Person.count + "人です");
-		
+
 		// クラスメソッドの呼び出し
 		Person.printCount();
 	}
